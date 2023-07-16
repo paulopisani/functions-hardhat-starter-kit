@@ -2,10 +2,12 @@
 // This calculation would require significant on-chain gas, but is easy for a decentralized oracle network.
 
 // Arguments can be provided when a request is initated on-chain and used in the request source code as shown below
+//Usam apenas o quarto e quinto parametros
 const principalAmount = parseInt(args[4])
 const APYTimes100 = parseInt(args[5])
 const APYAsDecimalPercentage = APYTimes100 / 100 / 100
 
+//alguns calculo OnChain sao muito caros, entao fazemos offChain
 const timeInYears = 1 / 12 // represents 1 month
 const eulersNumber = 2.7183
 

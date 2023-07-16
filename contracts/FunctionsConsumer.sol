@@ -42,7 +42,7 @@ contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
     string calldata source,
     bytes calldata secrets,
     string[] calldata args,
-    uint64 subscriptionId,
+    uint64 subscriptionId, //account in ChainLink Functions
     uint32 gasLimit
   ) public onlyOwner returns (bytes32) {
     Functions.Request memory req;
